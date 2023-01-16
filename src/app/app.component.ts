@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Appareil } from './appareil/Appareil'
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'appareilTp';
+
+  UA:  Appareil[] = [{nom: 'Macbook M1', nb: 12},{nom: 'Apple 1', nb: 12}]
 }
