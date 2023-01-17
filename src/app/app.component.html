@@ -5,7 +5,20 @@
 <app-appareil [appareil]="UA[1]"></app-appareil>
 
 <hr>
+<h2>Boucle for</h2>
 <!-- for  -->
+<div *ngFor="let item of items" >
+  {{ item.name }}
+</div>
+
+<!-- for  -->
+<h2>Bouclé for avec index</h2>
 <div *ngFor="let item of items; let index = index" >
   {{ item.name }} {{ index }}
+</div>
+
+<!-- for  -->
+<h2>Bouclé for avec index, premier et dernier</h2>
+<div *ngFor="let item of items; let index = index; let last = last; let first = first" >
+  {{ item.name }} {{ index }} {{ first }} {{ last }}
 </div>
