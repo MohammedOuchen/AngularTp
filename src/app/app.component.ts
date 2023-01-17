@@ -9,4 +9,10 @@ import { Appareil } from './appareil/Appareil'
 export class AppComponent {
 
   UA:  Appareil[] = [{nom: 'Macbook M1', nb: 12},{nom: 'Apple 1', nb: 12}]
+
+  items = [ {name: 'livre A '},
+            {name: 'livre A '},
+            {name: 'livre B '},
+            {name: 'livre C '},
+          ]
 }

@@ -3,3 +3,9 @@
 <app-appareil [appareil]="UA[0]"></app-appareil>
 <hr>
 <app-appareil [appareil]="UA[1]"></app-appareil>
+
+<hr>
+<!-- for  -->
+<div *ngFor="let item of items">
+  {{ item.name }}
+</div>
