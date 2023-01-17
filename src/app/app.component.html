@@ -32,3 +32,7 @@
 <div *ngFor="let item of items; let index = index; let last = last; let first = first" >
   {{ item.name }} {{ index }} {{ first }} {{ last }}
 </div>
+
+<hr>
+<p *ngIf="isVisible" (click) = "changeVisibilty()">L'element existe</p>
+<p *ngIf="!isVisible" (click) = "changeVisibilty()">Afficher</p>

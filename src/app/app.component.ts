@@ -15,4 +15,10 @@ export class AppComponent {
             {name: 'livre B '},
             {name: 'livre C '},
           ]
+
+  isVisible: boolean = true
+
+  changeVisibilty (){
+    this.isVisible = ! this.isVisible
+  }
 }
