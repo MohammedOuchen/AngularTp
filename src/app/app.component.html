@@ -1,8 +1,18 @@
 <h1>Home Page</h1>
-
+<p>Les appareils :</p>
+<!-- First methode to show UA  -->
 <app-appareil [appareil]="UA[0]"></app-appareil>
-<hr>
 <app-appareil [appareil]="UA[1]"></app-appareil>
+
+<hr>
+<!-- Second methode to show UA  -->
+<p>Les appareils :</p>
+<app-appareil *ngFor="let app of UA" [appareil]="app"></app-appareil>
+
+<hr>
+<!-- Third methode to show UA  -->
+<p>Les appareils :</p>
+<app-appareil *ngFor="let app of UA; let index = index" [appareil]="UA[index]"></app-appareil>
 
 <hr>
 <h2>Boucle for</h2>
