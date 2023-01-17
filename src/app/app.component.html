@@ -6,6 +6,6 @@
 
 <hr>
 <!-- for  -->
-<div *ngFor="let item of items">
-  {{ item.name }}
+<div *ngFor="let item of items; let index = index" >
+  {{ item.name }} {{ index }}
 </div>
